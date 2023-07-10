@@ -28,7 +28,7 @@ connection.once("open", function () {
 
 console.log("New client connected");
 
-// app.use("/", require("./middleware"));
+app.use("/", require("./middleware"));
 app.use("/api/auth", require("./routes/register")());
 app.use("/api/rental", require("./routes/rental")());
 
